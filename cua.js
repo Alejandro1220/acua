@@ -12,7 +12,6 @@ function aleat() {
       var ayw = clw+"px";
       document.getElementById('cuad').style.width=ayw;
       document.getElementById('cuad').style.height=ayw;
-     console.log(ayw);
         var ho = document.getElementById('con');
         if (clw>=300) {
         sco+=10;
@@ -30,16 +29,14 @@ function aleat() {
 }
 
 
-
 var sco=-10;         
  var c = 20;
-  var fg = 0;
 
   function clickk(){
   sco=0;
    var salu = function (){
     document.getElementById('hos').innerHTML= c;
-    if (c==0 && fg==0) {
+    if (c==0) {
         ag=prompt("Quiere volver a jugar?. responda si o no");
         if (ag=="si") {
           c=20;
